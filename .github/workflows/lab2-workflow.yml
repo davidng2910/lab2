@@ -23,5 +23,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Printing Custom Message
-        if: ${{ github.event.inputs.run_job == 'true' }}
         run: echo "${{ github.event.inputs.custom_message }}"
